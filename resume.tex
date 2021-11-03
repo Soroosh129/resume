@@ -1,0 +1,343 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%\RequirePackage{bibentry}
+%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+%\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+%\usepackage{notoccite}
+\usepackage[left=1in,right=1in,top=0.9in,bottom=0.9in]{geometry}
+\usepackage{xcolor}
+
+
+\usepackage[english]{babel}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{bibentry}
+
+
+\nobibliography{main}
+\bibliographystyle{unsrt}
+%\addto\captionsenglish{\renewcommand\refname{Publications}}
+
+%\usepackage{multibib}
+
+%\RequirePackage{filecontents}
+%\begin{filecontents*}{\jobname.bib}
+%	
+%	@article{sor2019,
+%		AUTHOR = {\textbf{Soroush Bateni} and Liu, Cong},
+%		title = {''Predictable Data-driven Resource Management: an Implementation using Autoware on Autonomous Platforms''},
+%		journal ={Real-Time Systems Symposium (RTSS)},
+%		year ={2019},
+%		note= {To appear}
+%	}
+%	
+%	@article{sor2018,
+%		AUTHOR = {\textbf{Soroush Bateni} and Zhou, Husheng and Liu, Cong},
+%		title = {''PredJoule: A Timing-Predictable Energy Optimization Framework for Deep Neural Networks''},
+%		journal ={Real-Time Systems Symposium (RTSS)},
+%		year ={2018}
+%	}
+%	
+%	@article{sor20182,
+%		AUTHOR = {\textbf{Soroush Bateni} and Liu, Cong},
+%		title = {''ApNet: Approximation-aware Real-Time Neural Network''},
+%		journal ={Real-Time Systems Symposium (RTSS)},
+%		year ={2018}
+%	}
+%	
+%	@article{hush2018,
+%		AUTHOR = {Zhou, Husheng and  \textbf{Soroush Bateni} and Liu, Cong},
+%		title = {''$S^3DNN$: Supervised Streaming and Scheduling for GPU-Accelerated Real-Time DNN Workloads''},
+%		journal ={IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)},
+%		year ={2018},
+%		note = {{\protect\color{red}{Best Paper Award}}}
+%	}
+%	
+%	@article{zheng20182,
+%		AUTHOR = {Dong, Zheng and Liu, Cong and \textbf{Soroush Bateni} and Kong, Zelun and He, Liang and Zhang, Lingming and Prakash, Ravi and Zhang, Yuqun},
+%		title = {''{A} General Analysis Framework for Soft Real-Time Tasks''},
+%		journal ={Transactions on Parallel and Distributed Systems},
+%		year ={2018}
+%	}
+%	
+%	@article{hush20182,
+%		AUTHOR = {Zhou, Husheng and  \textbf{Soroush Bateni} and Liu, Cong},
+%		title = {''GRU: Exploring Computation and Data Redundancy via Partial GPU Computing Result Reuse''},
+%		journal ={ACM International Conference on Supercomputing (ICS)},
+%		year ={2018}
+%	}
+%	
+%	
+%	
+%	@article{zheng2018,
+%		AUTHOR = {Dong, Zheng and Liu, Cong and \textbf{Soroush Bateni} and Chen, Kuan-Hsun and Chen, Jian-Jia and  von der Brüggen, Georg and Shi,Junjie},
+%		title = {''Shared-Resource-Centric Limited Preemptive Scheduling: A Comprehensive Study of Suspension-based Partitioning Approaches''},
+%		journal ={IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)},
+%		year ={2018}
+%	}
+%	
+%	
+%	@article{emrani2017new,
+%		title={''A New Parallel Approach for Accelerating the GPU-Based Execution of Edge Detection Algorithms''},
+%		author={Emrani, Zahra and \textbf{Soroush Bateni} and Rabbani, Hossein},
+%		journal={Journal of medical signals and sensors},
+%		volume={7},
+%		number={1},
+%		pages={33},
+%		year={2017},
+%		publisher={Medknow Publications}
+%	}
+%	
+%	@article{salimi2016,
+%		author = {Sartakhti, Javad Salimi AND Manshaei, Mohammad Hossein AND \textbf{Soroush Bateni} AND Archetti, Marco},
+%		journal = {PLOS ONE},
+%		publisher = {Public Library of Science},
+%		title = {''Evolutionary Dynamics of Tumor-Stroma Interactions in Multiple Myeloma''},
+%		year = {2016},
+%		volume = {11},
+%		pages = {1-17}
+%	}
+%	
+%	
+%	@inproceedings{Gaikwad:2015,
+%		author = {Gaikwad, Snehal (Neil) and Morina, Durim and ... and \textbf{Soroush Bateni} and ... and Bernstein, Michael},
+%		title = {''Daemo: A Self-Governed Crowdsourcing Marketplace''},
+%		booktitle = {Adjunct Proceedings of the 28th Annual ACM Symposium on User Interface Software \& Technology},
+%		year = {2015},
+%		publisher = {ACM},
+%	}
+%	
+%	
+%\end{filecontents*}
+
+%\usepackage[style=authoryear]{biblatex}
+%\addbibresource{\jobname.bib}
+% as bibentry and hyperref clash in some cases, this is a workaround
+% as suggested by the following two links:
+%https://tex.stackexchange.com/questions/227933/using-bibentry-to-cite-in-text-reference-with-apacite
+% and
+%https://tex.stackexchange.com/questions/65348/clash-between-bibentry-and-hyperref-with-bibstyle-elsart-harv/65401#65401
+
+%\usepackage{hyperref}
+
+% hanging publications: 1st line starts at beginning of line, 
+% further lines are placed a bit to the right
+
+\usepackage{multicol}
+
+%\usepackage{import}
+
+% personal data
+\name{Soroush}{Bateni}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{2200 Waterview PKWY, Richardson, TX 75080 }{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{2.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[5][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}\\
+  \begin{tabular}{l@{}}
+     {\itshape #4}
+  \end{tabular}
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\usepackage{ragged2e}
+\usepackage{enumerate}
+
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+%\vspace*{-12mm}
+\makecvtitle
+\vspace*{-12mm}
+%\nobibliography{main}
+%\bibliographystyle{unsrt}
+\begin{flushleft}
+\faEnvelopeO\hspace{0.00em} soroush@utdallas.edu | \hspace{0.25em}\faGlobe\hspace{0.00em} \href{https://www.utdallas.edu/~soroush/}{utdallas.edu/$\sim$soroush}  | \hspace{0.25em}\faMobile\hspace{0.00em} (682) 330-5395
+\end{flushleft}
+
+\vspace{1mm}
+
+\section{RESEARCH INTERESTS}
+\textbf{Cyber-Physical Systems}, in particular, autonomous systems such as self-driving vehicles.
+
+\textbf{Real-Time Systems}, in particular, predictable GPGPU computing and deterministic models of execution.
+
+
+
+\section{EDUCATION}
+{\customcventry{Expected Graduation: June 2021}{PhD in Computer Science.}{The University of Texas at Dallas}{Richardson, TX}{}{}}
+{\customcventry{Graduated: May 2018}{MS in Computer Science. Jonsson School Graduate Scholarship.}{The University of Texas at Dallas}{Richardson, TX}{}{}}
+%{\customcventry{Graduated: July 2015}{BS in Software Engineering.}{Isfahan University of Technology}{Isfahan, Iran}{}{}}
+
+
+\section{EXPERIENCE}
+{\customcventry{May 2017 - }{Research Assistant}{The University of Texas at Dallas}{Richardson, TX}{}
+{\begin{itemize}
+  \item Published NeuOS, a timing-predictable DNN framework for autonomous embedded systems, designed to minimize energy consumption and maximize accuracy in USENIX ATC 2020.
+  \item Published two papers in RTAS and RTSS in 2019 about data constraints and memory management in autonomous driving platforms.
+  \item Published two first-author papers in RTSS 2018 about balancing energy, timing and accuracy of DNNs in autonomous driving platforms.
+  \item Ongoing research on predictable, energy-efficient, and accurate computing in autonomous vehicles using Lingua Franca (\href{https://repo.lf-lang.org/}{repo.lf-lang.org}).
+\end{itemize}
+}
+
+{\customcventry{Fall 2020, Summer 2021}{Visiting Ph.D. Student Researcher}{The University of California, Berkeley}{Berkeley, CA}{}
+	{\begin{itemize}
+			\item Research on the semantics of Lingua Franca (LF), a synchronous programming language framework based on discrete time event models.
+			\item Ported Autoware.auto 1.0, an open-source autonomous driving
+			framework to LF.
+      \item Continuing work on Federated Lingua Franca, a distributed variant of
+      LF that can achieve a consistent global state across machines by default.
+			\item Under the supervision of Prof. Edward A. Lee.
+		\end{itemize}
+	}
+
+{\customcventry{Summer 2019}{Research Intern}{Fujitsu Laboratories of America}{Richardson, TX}{}
+	{\begin{itemize}
+			\item Developed a comprehensive prototype of an efficient distributed collective intelligence system for edge-connected autonomous vehicles.
+			\item Used Java, C++, and CUDA, along with open source ROS and Autoware software to implement an interactive computing framework using the latest NVIDIA embedded platforms. 
+		\end{itemize}
+	}
+
+{\customcventry{Spring 2015}{Stanford Crowd Research Collective}{Stanford University}{Remote}{}
+	{\begin{itemize}
+			\item Worked with a large research group on Daemo, under the supervision of Prof. Michael Bernstein.
+		\end{itemize}
+	}
+
+{\customcventry{Summer 2013}{Research Intern}{Institute for Research in Fundamental Sciences (IPM)}{Tehran, Iran}{}
+{\begin{itemize}
+  \item Worked on parallel stereo vision for MEMOCODE 2013 (IPM won first place).
+\end{itemize}
+}
+
+
+\section*{SELECTED PUBLICATIONS}
+%\bibliographystyle{unsrt}
+\begin{enumerate}[\hspace{0.28in}]
+  \setlength{\itemsep}{3pt}
+  \setlength{\parskip}{0pt}
+  \nobibliography{main}%
+  \item [2020] \bibentry{sor20202}
+  \item [-] \bibentry{sor20203}
+  \item [-] \bibentry{sor2020}
+	\item [2019] \bibentry{sor2019}
+	\item [2018] \bibentry{sor2018}
+	\item [-] \bibentry{sor20182}
+	\item [-] \bibentry{hush2018}
+	\item [-] \bibentry{zheng20182}
+	\item [-] \bibentry{hush20182}
+	\item [-] \bibentry{zheng2018}
+	\item [2016] \bibentry{salimi2016}
+\end{enumerate}
+
+
+\section{LECTURES}
+{\customcventry{Undergraduate Course - Summer 2018}{Sole Instructor}{Operating Systems Concepts}{UT Dallas}{}{}}
+{\customcventry{Graduate Course - Spring 2018}{GPU/CUDA programming - Co-Instructor}{General Purpose GPU Computing}{UT Dallas}{}{}}
+{\customcventry{Graduate Course}{GPU/CUDA programming - Co-Instructor}{Parallel Processing}{Isfahan University of Technology}{}{}}
+{\customcventry{}{GPU/CUDA programming - Sole Instructor}{Medical Image and Signal Processing Research Center}{Isfahan University of Medical Sciences}{}{}}
+
+
+\section{Skills}
+{\customcventry{}{CUDA\_C, C, C++, C\#, Java, Python}{Programming Languages}{}{}{}}
+{\customcventry{}{Researched on GPU Drivers (NOUVEAU + GDev), embedded Linux, LITMUS \textsuperscript{RT} (Real-Time OS)}{Relevant System Experiences:}{}{}{}}
+{\customcventry{}{ROS (Robot Operating System), Autoware, and Lingua Franca.}{Autonomous Vehicle and Embedded System Frameworks:}{}{}{}}
+{\customcventry{}{Caffe (CaffeNet, AlexNet, ResNet, GoogleNet, VGGNet), Darknet (YOLO), TensorFlow}{Neural Network Frameworks}{}{}{}}
+{\customcventry{}{NVIDIA Drive PX2 Autochauffeur, Jetson AGX Xavier, Jetson TX2, DGPU}{Platforms}{}{}{}}
+{\customcventry{}{Proficient in English, love teamwork, and very passionate about research.}{Miscellaneous}{}{}{}}
+%{\customcventry{}{English: Fluent. Persian: Native}{Languages}{}{}{}}
+%\section{ADDITIONAL}
+%\begin{minipage}{\maincolumnwidth}%
+%	\small{
+%    	\begin{itemize}
+%          \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
+%          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
+%          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
+%          \item Fluent in Gibberish, conversational in Nonsense
+%		\end{itemize}}%
+%\end{minipage}%
+%      
+%}
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
