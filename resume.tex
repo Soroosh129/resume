@@ -36,7 +36,7 @@
 \usepackage{natbib}
 \usepackage{bibentry}
 
-
+\usepackage{bbding,pifont} % two dingbat fonts
 
 
 \usepackage{multicol}
@@ -99,9 +99,11 @@
 %\nobibliography{main}
 %\bibliographystyle{unsrt}
 \begin{flushleft}
-\faEnvelopeO\hspace{0.00em} soroush@utdallas.edu |
+\faEnvelopeO\hspace{0.00em} soroush@berkeley.edu |
 \hspace{0.25em}\faGlobe\hspace{0.00em}
 \href{https://www.utdallas.edu/~soroush/}{utdallas.edu/$\sim$soroush} |
+% \hspace{0.25em}\faLinkedinSquare\hspace{0.00em}
+% \href{https://www.linkedin.com/in/sbateni}{linkedin.com/in/sbateni} |
 \hspace{0.25em}\faGithub\hspace{0.00em} \href{https://github.com/Soroosh129}{github.com/Soroosh129} |
 \hspace{0.25em}\faMobile\hspace{0.00em} (682) 330-5395
 \end{flushleft}
@@ -109,59 +111,69 @@
 \vspace{1mm}
 
 \section{RESEARCH INTERESTS}
-\textbf{Cyber-Physical Systems}, in particular, autonomous systems such as self-driving vehicles.
+\textbf{Cyber-Physical Systems}, in particular, autonomous embedded systems such as self-driving vehicles.
 
-\textbf{Real-Time Systems}, in particular, predictable GPGPU computing and deterministic models of execution.
+\textbf{Real-Time Systems}, in particular, predictable embedded GPGPU computing and deterministic models of computation.
 
 
 
 \section{EDUCATION}
-{\customcventry{Expected Graduation: May 21st 2022}{PhD in Computer Science.}{The
+{\customcventry{Graduated: May 2022}{PhD in Computer Science. GPA: 3.76.}{The
 University of Texas at Dallas}{Richardson, TX}{}{}}
 {\customcventry{Graduated: May 2018}{MS in Computer Science. Jonsson School
-Graduate Scholarship.}{The University of Texas at Dallas}{Richardson, TX}{}{}}
+Graduate Scholarship. GPA: 3.72.}{The University of Texas at Dallas}{Richardson, TX}{}{}}
 %{\customcventry{Graduated: July 2015}{BS in Software Engineering.}{Isfahan University of Technology}{Isfahan, Iran}{}{}}
 
 
 \section{EXPERIENCE}
-{\customcventry{May 2017 - }{Research Assistant}{The University of Texas at Dallas}{Richardson, TX}{}
+
+
+{\customcventry{May 2022 - Current}{Postdoc}{The University of California, Berkeley}{Berkeley, CA}{}
+	{\begin{itemize}
+    \item Research on
+    \begin{itemize}
+			\item deterministic heterogeneous distributed embedded systems in the
+			context of \href{https://www.lf-lang.org}{Lingua Franca (LF)~\scalebox{0.75}{\faExternalLink}},
+      \item pluggable schedulers for LF to create a viable
+      platform for real-time systems research, and,
+      \item enhancing the testability of autonomous embedded systems by
+      enabling easy migration from Robot Operating System (ROS) to LF.
+		\end{itemize}
+    \item Leading undergraduate students on several projects, including the
+    porting of Amazon's DeepRacer software stack from ROS to Lingua Franca.
+      \item Supervisor: Prof. Edward A. Lee
+		\end{itemize}
+	}}
+
+{\customcventry{May 2017 - May 2022}{Research Assistant}{The University of Texas at Dallas}{Richardson, TX}{}
 {\begin{itemize}
   \item Published NeuOS, a timing-predictable DNN framework for autonomous embedded systems, designed to minimize energy consumption and maximize accuracy in USENIX ATC 2020.
-  \item Published two papers in RTAS and RTSS in 2019 about data constraints and memory management in autonomous driving platforms.
-  \item Published two first-author papers in RTSS 2018 about balancing energy, timing and accuracy of DNNs in autonomous driving platforms.
-  \item Ongoing research on predictable, energy-efficient, and accurate computing in autonomous vehicles using Lingua Franca (\href{https://repo.lf-lang.org/}{repo.lf-lang.org}).
+  \item Published two papers in RTSS 2019 and RTAS 2020 about data constraints
+  and memory management in autonomous embedded systems.
 \end{itemize}
-}
+}}
 
 {\customcventry{Fall 2020, Summer 2021}{Visiting Ph.D. Student Researcher}{The University of California, Berkeley}{Berkeley, CA}{}
 	{\begin{itemize}
-			\item Research on the semantics of Lingua Franca (LF), a synchronous programming language framework based on discrete time event models.
-			\item Ported Autoware.auto 1.0, an open-source autonomous driving
+			\item Research on the semantics of Lingua Franca (\href{https://www.lf-lang.org}{lf-lang.org}), a synchronous programming language framework based on discrete time event models.
+			\item Ported Autoware.Auto 1.0, an open-source autonomous driving
 			framework to LF.
-      \item Continuing work on Federated Lingua Franca, a distributed variant of
-      LF that can achieve a consistent global state across machines by default.
 			\item Under the supervision of Prof. Edward A. Lee.
 		\end{itemize}
-	}
+	}}
 
 {\customcventry{Summer 2019}{Research Intern}{Fujitsu Laboratories of America}{Richardson, TX}{}
 	{\begin{itemize}
 			\item Developed a comprehensive prototype of an efficient distributed collective intelligence system for edge-connected autonomous vehicles.
 			\item Used Java, C++, and CUDA, along with open source ROS and Autoware software to implement an interactive computing framework using the latest NVIDIA embedded platforms. 
 		\end{itemize}
-	}
+	}}
 
 {\customcventry{Spring 2015}{Stanford Crowd Research Collective}{Stanford University}{Remote}{}
 	{\begin{itemize}
 			\item Worked with a large research group on Daemo, under the supervision of Prof. Michael Bernstein.
 		\end{itemize}
-	}
-
-{\customcventry{Summer 2013}{Research Intern}{Institute for Research in Fundamental Sciences (IPM)}{Tehran, Iran}{}
-{\begin{itemize}
-  \item Worked on parallel stereo vision for MEMOCODE 2013 (IPM won first place).
-\end{itemize}
-}
+	}}
 
 
 \section*{SELECTED PUBLICATIONS}
