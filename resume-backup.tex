@@ -63,28 +63,6 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\skills}[7][0.35em]{
-  \begin{tabular}{@{}l} 
-    {\bfseries #4}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\bfseries #5}
-  \end{tabular} \\
-  \begin{tabular}{@{}l} 
-    {\itshape #3}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\itshape #2}
-  \end{tabular}
-  \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-
 \newcommand*{\customcvproject}[5][.25em]{
 %   \vfill\noindent
   \begin{tabular}{@{}l} 
@@ -120,45 +98,44 @@
 %\bibliographystyle{unsrt}
 \begin{flushleft}
 \faEnvelope\hspace{0.00em} soroush@duck.com |
-\hspace{0.25em}\faMobile\hspace{0.00em} (682) 330-5395 |
 \hspace{0.25em}\faLinkedin\hspace{0.00em}
-\href{https://www.linkedin.com/in/sbateni}{LinkedIn~\scalebox{0.75}{\faExternalLink*}} |
+\href{https://www.linkedin.com/in/sbateni}{linkedin.com/in/sbateni} |
 % \hspace{0.25em}\faLinkedinSquare\hspace{0.00em}
 % \href{https://www.linkedin.com/in/sbateni}{linkedin.com/in/sbateni} |
-\hspace{0.25em}\faGithub\hspace{0.00em} \href{https://github.com/Soroosh129}{GitHub~\scalebox{0.75}{\faExternalLink*}} |
-\hspace{0.25em}\faGraduationCap\hspace{0.00em} \href{https://scholar.google.com/citations?user=7XrO5SkAAAAJ}{Google Scholar~\scalebox{0.75}{\faExternalLink*}}
+\hspace{0.25em}\faGithub\hspace{0.00em} \href{https://github.com/Soroosh129}{github.com/Soroosh129} |
+\hspace{0.25em}\faMobile\hspace{0.00em} (682) 330-5395
 \end{flushleft}
+
+\vspace{1mm}
 
 
 \section{EDUCATION}
-{
-\customcventry{Graduated: May 2022}{PhD and MS in Computer Science (Jonsson School Graduate Scholarship).}{The University of Texas at Dallas}{Richardson, TX}{}{}
-}
+{\customcventry{Graduated: May 2022}{PhD in Computer Science.}{The
+University of Texas at Dallas}{Richardson, TX}{}{}}
+{\customcventry{Graduated: May 2018}{MS in Computer Science. Jonsson School
+Graduate Scholarship.}{The University of Texas at Dallas}{Richardson, TX}{}{}}
+%{\customcventry{Graduated: July 2015}{BS in Software Engineering.}{Isfahan University of Technology}{Isfahan, Iran}{}{}}
 
 
 \section{EXPERIENCE}
 
-{\customcventry{Aug 2022 - Current}{Software Engineer}{Apple Inc.}{Santa Clara, CA}{}
+{\customcventry{Aug 2022 - Current}{Embedded Software Engineer}{Apple Inc.}{Santa Clara, CA}{}
 	{\begin{itemize}
-    \item Special Projects Group. Software platform for autonomous systems.
-    \begin{itemize}
-    \item Modeling languages, runtime, and tools.
-    \item DRI for several SPG-level features. This involved working with a cross-functional team, communicating with internal users, architecture design, project planning, and delivering production-ready code for a safety-critical application.
-    \end{itemize}
+    \item Special Projects Group. Software platforms for autonomous systems.
 		\end{itemize}
 	}}
 
-{\customcventry{Sep. 2020 - Aug 2022}{Postdoc, Visiting Ph.D. Student Researcher}{The University of California, Berkeley}{Berkeley, CA}{}
+{\customcventry{May 2022 - Aug 2022}{Postdoc}{The University of California, Berkeley}{Berkeley, CA}{}
 	{\begin{itemize}
-    \item Research on:
+    \item Research on
     \begin{itemize}
-			\item Deterministic heterogeneous distributed embedded systems in the
-			context of \href{https://www.lf-lang.org}{Lingua Franca (LF)~\scalebox{0.75}{\faExternalLink*}}.
-      \item Pluggable schedulers for LF to create a viable
-      platform for real-time systems research.
+			\item deterministic heterogeneous distributed embedded systems in the
+			context of \href{https://www.lf-lang.org}{Lingua Franca (LF)~\scalebox{0.75}{\faExternalLink*}},
+      \item pluggable schedulers for LF to create a viable
+      platform for real-time systems research, and,
+      \item enhancing the testability of autonomous embedded systems by
+      enabling easy migration from Robot Operating System (ROS) to LF.
 		\end{itemize}
-      \item Led the project to port Autoware, an open-source autonomous driving
-      software, to LF. \href{https://www.youtube.com/watch?v=o7gBlVdiaxc}{Demo~\scalebox{0.75}{\faExternalLink*}}.
     \item Led undergraduate students on several projects, including the
     porting of Amazon's DeepRacer software stack from ROS to Lingua Franca.
       \item Supervisor: Prof. Edward A. Lee
@@ -167,28 +144,69 @@
 
 {\customcventry{May 2017 - May 2022}{Research Assistant}{The University of Texas at Dallas}{Richardson, TX}{}
 {\begin{itemize}
-  \item Created NeuOS, a timing-predictable DNN framework for autonomous embedded systems, designed to minimize energy consumption and maximize accuracy. \href{https://github.com/Soroosh129/NeuOS}{github.com/Soroosh129/NeuOS~\scalebox{0.75}{\faExternalLink*}}.
-  \item Research on scheduling, managing data constraints,
-  and, memory efficiency for AI.
-  \item Sole instructor for Operating Systems Concepts (Summer 2018).
+  \item Published NeuOS, a timing-predictable DNN framework for autonomous embedded systems, designed to minimize energy consumption and maximize accuracy in USENIX ATC 2020.
+  \item Published two papers in RTSS 2019 and RTAS 2020 about data constraints
+  and memory management in autonomous embedded systems.
 \end{itemize}
 }}
 
+{\customcventry{Fall 2020, Summer 2021}{Visiting Ph.D. Student Researcher}{The University of California, Berkeley}{Berkeley, CA}{}
+	{\begin{itemize}
+			\item Research on the semantics of Lingua Franca (\href{https://www.lf-lang.org}{lf-lang.org}), a synchronous programming language framework based on discrete time event models.
+			\item Ported Autoware.Auto 1.0, an open-source autonomous driving
+			framework to LF.
+			\item Under the supervision of Prof. Edward A. Lee.
+		\end{itemize}
+	}}
+
 {\customcventry{Summer 2019}{Research Intern}{Fujitsu Laboratories of America}{Richardson, TX}{}
 	{\begin{itemize}
-			\item Delivered a prototype for an efficient distributed collective intelligence system for edge-connected autonomous vehicles.
+			\item Developed a comprehensive prototype of an efficient distributed collective intelligence system for edge-connected autonomous vehicles.
 			\item Used Java, C++, and CUDA, along with open source ROS and Autoware software to implement an interactive computing framework using the latest NVIDIA embedded platforms. 
 		\end{itemize}
 	}}
 
+{\customcventry{Spring 2015}{Stanford Crowd Research Collective}{Stanford University}{Remote}{}
+	{\begin{itemize}
+			\item Worked with a large research group on Daemo, under the supervision of Prof. Michael Bernstein.
+		\end{itemize}
+	}}
+
+
+\section*{SELECTED PUBLICATIONS}
+\bibliographystyle{unsrt}
+\begin{enumerate}[\hspace{0.28in}]
+  \setlength{\itemsep}{3pt}
+  \setlength{\parskip}{0pt}
+  \nobibliography{resume}%
+  \item [2023] \bibentry{bateni2023risk}
+  \item [-] \bibentry{cal2023}
+  \item [2021] \bibentry{lee2021quantifying}
+  \item [-] \bibentry{lohstroh2021toward}
+  \item [2020] \bibentry{sor20202}
+  \item [-] \bibentry{sor2020}
+	\item [2019] \bibentry{sor2019}
+	\item [2018] \bibentry{sor2018}
+	\item [-] \bibentry{sor20182}
+	\item [-] \bibentry{hush2018}
+\end{enumerate}
+
+
+\section{GIVEN LECTURES}
+{\customcventry{Undergraduate Course - Summer 2018}{Sole Instructor}{Operating Systems Concepts}{UT Dallas}{}{}}
+{\customcventry{Graduate Course - Spring 2018}{GPU/CUDA programming - Co-Instructor}{General Purpose GPU Computing}{UT Dallas}{}{}}
+{\customcventry{Graduate Course}{GPU/CUDA programming - Co-Instructor}{Parallel Processing}{Isfahan University of Technology}{}{}}
+{\customcventry{}{GPU/CUDA programming - Sole Instructor}{Medical Image and Signal Processing Research Center}{Isfahan University of Medical Sciences}{}{}}
+
 
 \section{Skills}
-{\skills{}{CUDA\_C, C, C++, C\#, Java, Python, Bazel/Skylark}{Programming Languages}{}{}{}}
-{\skills{}{lflang/Lingua-Franca, NeuOS}{Open-Source Contributions}{}{}{}}
-{\skills{}{Researched on GPU Drivers (NOUVEAU + GDev), embedded Linux, LITMUS \textsuperscript{RT} (Real-Time OS)}{Relevant System Experiences:}{}{}{}}
-{\skills{}{Caffe (CaffeNet, AlexNet, ResNet, GoogleNet, VGGNet), Darknet (YOLO), TensorFlow}{Neural Network Frameworks}{}{}{}}
-{\skills{}{NVIDIA Drive PX2 Autochauffeur, Jetson AGX Xavier, Jetson TX2, DGPU}{Platforms}{}{}{}}
-{\skills{}{Proficient in English, love teamwork, and very passionate about learning.}{Miscellaneous}{}{}{}}
+{\customcventry{}{CUDA\_C, C, C++, C\#, Java, Python, Bazel/Skylark}{Programming Languages}{}{}{}}
+{\customcventry{}{lflang/Lingua-Franca, NeuOS}{Open-Source Contributions}{}{}{}}
+{\customcventry{}{Researched on GPU Drivers (NOUVEAU + GDev), embedded Linux, LITMUS \textsuperscript{RT} (Real-Time OS)}{Relevant System Experiences:}{}{}{}}
+{\customcventry{}{ROS (Robot Operating System), Autoware, and Lingua Franca.}{Autonomous Vehicle and Embedded System Frameworks:}{}{}{}}
+{\customcventry{}{Caffe (CaffeNet, AlexNet, ResNet, GoogleNet, VGGNet), Darknet (YOLO), TensorFlow}{Neural Network Frameworks}{}{}{}}
+{\customcventry{}{NVIDIA Drive PX2 Autochauffeur, Jetson AGX Xavier, Jetson TX2, DGPU}{Platforms}{}{}{}}
+{\customcventry{}{Proficient in English, love teamwork, and very passionate about research.}{Miscellaneous}{}{}{}}
 %{\customcventry{}{English: Fluent. Persian: Native}{Languages}{}{}{}}
 %\section{ADDITIONAL}
 %\begin{minipage}{\maincolumnwidth}%
